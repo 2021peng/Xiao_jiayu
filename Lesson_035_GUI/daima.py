@@ -50,7 +50,7 @@ def search_file(start_dir):
             search_file(each_file)  # 递归调用
             os.chdir(os.pardir) # 递归调用后切记返回上一层目录
 
-target = ['.c','.cpp','.py','.cc','.java','.pas','.asm']
+target = ['.c','.cpp','.py','.cc','.java','.pas','.asm','.m','.ipynb']
 file_list = {}
 source_list = {}
 
