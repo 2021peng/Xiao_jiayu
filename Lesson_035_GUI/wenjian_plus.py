@@ -11,12 +11,12 @@ with open(file_path,encoding='utf-8') as old_file:
     text = old_file.read()
     text_after = g.textbox(msg,title,text)
 
-if text != text_after[:-1]:
+if text != text_after:
     #textbox的返回值会追加一个换行符
     choice = g.buttonbox("检测到文件的内容发生变化，请选择以下操作：","警告",("覆盖保存","放弃保存","另存为"))
     if choice == "覆盖保存":
         with open(file_path,'w+',encoding='utf-8') as old_file:
-            old_file.write(text_after[:-1])
+            old_file.write(text_after)
     if choice == "放弃":
         pass
     if choice == "另存为":
@@ -24,5 +24,5 @@ if text != text_after[:-1]:
         if os.path.splitext(another_path)[1] != '.txt':
             another_path += '.txt'
         with open(another_path,'w+',encoding='utf-8') as new_file:
-            new_file.write(text_after[:-1])
+            new_file.write(text_after)
 
