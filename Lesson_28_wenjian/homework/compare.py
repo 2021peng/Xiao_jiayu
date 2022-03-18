@@ -1,5 +1,9 @@
 # 开发人：peng
 # 开发时间 ：2022/3/17 20:58
+"""
+编写一个程序，比较用户输入的两个文件，如果不同，
+显示出所有不同处的行号与第一个不同字符的位置，
+"""
 def file_compare(file1, file2):
     f1 = open(file1,encoding='utf-8')
     f2 = open(file2,encoding='utf-8')
