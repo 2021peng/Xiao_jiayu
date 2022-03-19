@@ -1,6 +1,10 @@
 # 开发人：peng
 # 开发时间 ：2022/3/19 11:27
-
+"""
+编写一个程序，用户输入关键字，查找当前文件夹内
+（如果当前文件夹内包含文件夹，则进入文件夹继续搜索）所有含有该关键字的文本文件（.txt后缀），
+要求显示该文件所在的位置以及关键字在文件中的具体位置（第几行第几个字符）
+"""
 
 import os
 
@@ -54,6 +58,8 @@ def search_files(key, detail):
             print('在文件【%s】中找到关键字【%s】' % (each_txt_file, key))
             if detail in ['YES', 'Yes', 'yes']:
                 print_pos(key_dict)
+        else:
+            print('没有此关键词！')
 
 
 key = input('请将该脚本放于待查找的文件夹内，请输入关键字：')
