@@ -1,2 +1,6 @@
-C:\Users\admin\PycharmProjects\Xiao_jiayu\Lesson_30_wenjianoperation\homework\vedioList.txt
+C:\Users\admin\PycharmProjects\Xiao_jiayu\Lesson_30_wenjianoperation\homework\search_key.py
+C:\Users\admin\PycharmProjects\Xiao_jiayu\Lesson_30_wenjianoperation\homework\wenjian_bit.py
+C:\Users\admin\PycharmProjects\Xiao_jiayu\Lesson_30_wenjianoperation\homework\wenjian_num.py
+C:\Users\admin\PycharmProjects\Xiao_jiayu\Lesson_30_wenjianoperation\homework\wenjian_search.py
+C:\Users\admin\PycharmProjects\Xiao_jiayu\Lesson_30_wenjianoperation\homework\wenjian_video.py
 C:\Users\admin\PycharmProjects\Xiao_jiayu\Lesson_30_wenjianoperation\homework\新建文本文档.mp4

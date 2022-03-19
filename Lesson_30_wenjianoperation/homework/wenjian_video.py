@@ -1,19 +1,19 @@
 # 开发人：peng
 # 开发时间 ：2022/3/19 11:34
 """
-
+编写一个程序，用户输入开始搜索的路径，
+查找该路径下（包含子文件夹内）所有的视频格式文件（要求查找mp4 rmvb, avi的格式即可），
+并把创建一个文件（vedioList.txt）存放所有找到的文件的路径
 """
-
 import os
 
 
 def search_file(start_dir, target):
     print(os.getcwd()+ '\nloop1')
     os.chdir(start_dir)
-    path = os.getcwd()
-    print(os.getcwd() + '\nloop2')
-    list = os.walk(path)
-    for each_file in list:
+    print(os.getcwd() + '\nloop1')
+
+    for each_file in os.listdir(os.curdir):
         ext = os.path.splitext(each_file)[1]
         if ext in target:
             vedio_list.append(os.getcwd() + os.sep + each_file + os.linesep)  # 使用os.sep是程序更标准
@@ -24,10 +24,8 @@ def search_file(start_dir, target):
 
 start_dir = input('请输入待查找的初始目录：')
 program_dir = os.getcwd()
-print(start_dir + '\ttest1')
-print(program_dir + '\ttest2')
 
-target = ['.mp4', '.avi', '.txt','.pdf','.rmvb']
+target = ['.mp4', '.avi','.py','.rmvb']
 vedio_list = []
 
 search_file(start_dir, target)
